@@ -8,32 +8,31 @@
 
 import UIKit
 
-class SearchResultsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+
+class SearchResultsViewController: UITableViewController {
     var searchResults: [Student] = []
-    
-    @IBOutlet weak var searchResultsTable: UITableView!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        searchResultsTable.dataSource = self
-        searchResultsTable.delegate = self
     }
     
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return searchResults.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let resultCell = UITableViewCell()
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let resultCell = self.tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! StudentTableViewCell
+            
+        //resultCell.student = searchResults[indexPath.row]
         
-        resultCell.textLabel?.text = searchResults[indexPath.row].name
+        resultCell.setStudent(searchResults[indexPath.row])
         
         return resultCell
     }

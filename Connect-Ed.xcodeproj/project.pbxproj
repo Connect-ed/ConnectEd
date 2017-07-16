@@ -17,28 +17,37 @@
 		046FD1481EF08E38008DFEFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046FD1461EF08E38008DFEFD /* Main.storyboard */; };
 		046FD14A1EF08E38008DFEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046FD1491EF08E38008DFEFD /* Assets.xcassets */; };
 		046FD14D1EF08E38008DFEFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046FD14B1EF08E38008DFEFD /* LaunchScreen.storyboard */; };
-		046FD1581EF08E39008DFEFD /* Connect_EdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FD1571EF08E39008DFEFD /* Connect_EdTests.swift */; };
-		046FD1631EF08E39008DFEFD /* Connect_EdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FD1621EF08E39008DFEFD /* Connect_EdUITests.swift */; };
+		047867531F1AF7CC002AD2FA /* Sdk in Resources */ = {isa = PBXBuildFile; fileRef = 047867521F1AF7CC002AD2FA /* Sdk */; };
+		0478675C1F1AF8DB002AD2FA /* AmazonAws in Resources */ = {isa = PBXBuildFile; fileRef = 0478675B1F1AF8DB002AD2FA /* AmazonAws */; };
+		0478675F1F1AF920002AD2FA /* AWSMobileHubHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0478675E1F1AF920002AD2FA /* AWSMobileHubHelper.framework */; };
+		047867621F1AF93C002AD2FA /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047867601F1AF93C002AD2FA /* AWSCore.framework */; };
+		047867631F1AF93C002AD2FA /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 047867601F1AF93C002AD2FA /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		047867641F1AF93C002AD2FA /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047867611F1AF93C002AD2FA /* AWSDynamoDB.framework */; };
+		047867651F1AF93C002AD2FA /* AWSDynamoDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 047867611F1AF93C002AD2FA /* AWSDynamoDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		047867671F1AF9CE002AD2FA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 047867661F1AF9CE002AD2FA /* libsqlite3.tbd */; };
+		047867691F1AF9DE002AD2FA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 047867681F1AF9DE002AD2FA /* libz.tbd */; };
+		04BAE82F1EF45F5A003B7FCD /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE82E1EF45F5A003B7FCD /* StudentTableViewCell.swift */; };
+		04BAE8331EF4ABB2003B7FCD /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE8321EF4ABB2003B7FCD /* School.swift */; };
 		04DCD3611EF3074E001E1408 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCD3601EF3074E001E1408 /* SearchResultsViewController.swift */; };
 		04DCD3631EF32FB7001E1408 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCD3621EF32FB7001E1408 /* Student.swift */; };
+		04FE1D1A1F0058BF009B6082 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE1D191F0058BF009B6082 /* MessageTableViewCell.swift */; };
+		04FE1D1C1F005C30009B6082 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE1D1B1F005C30009B6082 /* Conversation.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		046FD1541EF08E39008DFEFD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 046FD1351EF08E38008DFEFD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 046FD13C1EF08E38008DFEFD;
-			remoteInfo = "Connect-Ed";
+/* Begin PBXCopyFilesBuildPhase section */
+		0478672B1F1AEF48002AD2FA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				047867651F1AF93C002AD2FA /* AWSDynamoDB.framework in Embed Frameworks */,
+				047867631F1AF93C002AD2FA /* AWSCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		046FD15F1EF08E39008DFEFD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 046FD1351EF08E38008DFEFD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 046FD13C1EF08E38008DFEFD;
-			remoteInfo = "Connect-Ed";
-		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		04645E8C1EF1EB17008B7CC4 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -53,14 +62,19 @@
 		046FD1491EF08E38008DFEFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046FD14C1EF08E38008DFEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046FD14E1EF08E38008DFEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		046FD1531EF08E39008DFEFD /* Connect-EdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Connect-EdTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		046FD1571EF08E39008DFEFD /* Connect_EdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connect_EdTests.swift; sourceTree = "<group>"; };
-		046FD1591EF08E39008DFEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		046FD15E1EF08E39008DFEFD /* Connect-EdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Connect-EdUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		046FD1621EF08E39008DFEFD /* Connect_EdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connect_EdUITests.swift; sourceTree = "<group>"; };
-		046FD1641EF08E39008DFEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047867521F1AF7CC002AD2FA /* Sdk */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sdk; sourceTree = "<group>"; };
+		0478675B1F1AF8DB002AD2FA /* AmazonAws */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AmazonAws; sourceTree = "<group>"; };
+		0478675E1F1AF920002AD2FA /* AWSMobileHubHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSMobileHubHelper.framework; path = AmazonAws/AWSMobileHubHelper.framework; sourceTree = "<group>"; };
+		047867601F1AF93C002AD2FA /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = Sdk/Aws/AWSCore.framework; sourceTree = "<group>"; };
+		047867611F1AF93C002AD2FA /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSDynamoDB.framework; path = Sdk/Aws/AWSDynamoDB.framework; sourceTree = "<group>"; };
+		047867661F1AF9CE002AD2FA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		047867681F1AF9DE002AD2FA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		04BAE82E1EF45F5A003B7FCD /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		04BAE8321EF4ABB2003B7FCD /* School.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		04DCD3601EF3074E001E1408 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		04DCD3621EF32FB7001E1408 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		04FE1D191F0058BF009B6082 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		04FE1D1B1F005C30009B6082 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,20 +82,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		046FD1501EF08E39008DFEFD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		046FD15B1EF08E39008DFEFD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				047867691F1AF9DE002AD2FA /* libz.tbd in Frameworks */,
+				047867671F1AF9CE002AD2FA /* libsqlite3.tbd in Frameworks */,
+				0478675F1F1AF920002AD2FA /* AWSMobileHubHelper.framework in Frameworks */,
+				047867641F1AF93C002AD2FA /* AWSDynamoDB.framework in Frameworks */,
+				047867621F1AF93C002AD2FA /* AWSCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,10 +96,13 @@
 		046FD1341EF08E38008DFEFD = {
 			isa = PBXGroup;
 			children = (
+				047867601F1AF93C002AD2FA /* AWSCore.framework */,
+				047867611F1AF93C002AD2FA /* AWSDynamoDB.framework */,
+				0478675B1F1AF8DB002AD2FA /* AmazonAws */,
 				046FD13F1EF08E38008DFEFD /* Connect-Ed */,
-				046FD1561EF08E39008DFEFD /* Connect-EdTests */,
-				046FD1611EF08E39008DFEFD /* Connect-EdUITests */,
 				046FD13E1EF08E38008DFEFD /* Products */,
+				047867521F1AF7CC002AD2FA /* Sdk */,
+				0478675D1F1AF920002AD2FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,8 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				046FD13D1EF08E38008DFEFD /* Connect-Ed.app */,
-				046FD1531EF08E39008DFEFD /* Connect-EdTests.xctest */,
-				046FD15E1EF08E39008DFEFD /* Connect-EdUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,39 +117,51 @@
 		046FD13F1EF08E38008DFEFD /* Connect-Ed */ = {
 			isa = PBXGroup;
 			children = (
-				046FD1401EF08E38008DFEFD /* AppDelegate.swift */,
-				046FD1461EF08E38008DFEFD /* Main.storyboard */,
-				046FD1491EF08E38008DFEFD /* Assets.xcassets */,
-				046FD14B1EF08E38008DFEFD /* LaunchScreen.storyboard */,
-				046FD14E1EF08E38008DFEFD /* Info.plist */,
-				04645E921EF1EBE1008B7CC4 /* ChatsViewController.swift */,
-				04645E941EF1EBEB008B7CC4 /* ChatViewController.swift */,
-				04645E901EF1EBAA008B7CC4 /* FavoritesViewController.swift */,
-				04645E981EF1EC1A008B7CC4 /* MoreViewController.swift */,
-				04645E961EF1EC10008B7CC4 /* ProfileViewController.swift */,
-				04645E8C1EF1EB17008B7CC4 /* SearchViewController.swift */,
-				04DCD3601EF3074E001E1408 /* SearchResultsViewController.swift */,
-				04DCD3621EF32FB7001E1408 /* Student.swift */,
+				0478670A1F1AD804002AD2FA /* Connect-Ed */,
 			);
 			path = "Connect-Ed";
 			sourceTree = "<group>";
 		};
-		046FD1561EF08E39008DFEFD /* Connect-EdTests */ = {
+		0478670A1F1AD804002AD2FA /* Connect-Ed */ = {
 			isa = PBXGroup;
 			children = (
-				046FD1571EF08E39008DFEFD /* Connect_EdTests.swift */,
-				046FD1591EF08E39008DFEFD /* Info.plist */,
+				047867311F1AF06E002AD2FA /* SupportingFiles */,
+				046FD1401EF08E38008DFEFD /* AppDelegate.swift */,
+				046FD1491EF08E38008DFEFD /* Assets.xcassets */,
+				046FD1461EF08E38008DFEFD /* Main.storyboard */,
+				046FD14B1EF08E38008DFEFD /* LaunchScreen.storyboard */,
+				04645E921EF1EBE1008B7CC4 /* ChatsViewController.swift */,
+				04645E941EF1EBEB008B7CC4 /* ChatViewController.swift */,
+				04FE1D1B1F005C30009B6082 /* Conversation.swift */,
+				04645E901EF1EBAA008B7CC4 /* FavoritesViewController.swift */,
+				04FE1D191F0058BF009B6082 /* MessageTableViewCell.swift */,
+				04645E981EF1EC1A008B7CC4 /* MoreViewController.swift */,
+				04645E961EF1EC10008B7CC4 /* ProfileViewController.swift */,
+				04BAE8321EF4ABB2003B7FCD /* School.swift */,
+				04645E8C1EF1EB17008B7CC4 /* SearchViewController.swift */,
+				04DCD3601EF3074E001E1408 /* SearchResultsViewController.swift */,
+				04DCD3621EF32FB7001E1408 /* Student.swift */,
+				04BAE82E1EF45F5A003B7FCD /* StudentTableViewCell.swift */,
 			);
-			path = "Connect-EdTests";
+			name = "Connect-Ed";
 			sourceTree = "<group>";
 		};
-		046FD1611EF08E39008DFEFD /* Connect-EdUITests */ = {
+		047867311F1AF06E002AD2FA /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				046FD1621EF08E39008DFEFD /* Connect_EdUITests.swift */,
-				046FD1641EF08E39008DFEFD /* Info.plist */,
+				046FD14E1EF08E38008DFEFD /* Info.plist */,
 			);
-			path = "Connect-EdUITests";
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0478675D1F1AF920002AD2FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				047867681F1AF9DE002AD2FA /* libz.tbd */,
+				047867661F1AF9CE002AD2FA /* libsqlite3.tbd */,
+				0478675E1F1AF920002AD2FA /* AWSMobileHubHelper.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +174,8 @@
 				046FD1391EF08E38008DFEFD /* Sources */,
 				046FD13A1EF08E38008DFEFD /* Frameworks */,
 				046FD13B1EF08E38008DFEFD /* Resources */,
+				0478672B1F1AEF48002AD2FA /* Embed Frameworks */,
+				0478675A1F1AF874002AD2FA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -165,42 +185,6 @@
 			productName = "Connect-Ed";
 			productReference = 046FD13D1EF08E38008DFEFD /* Connect-Ed.app */;
 			productType = "com.apple.product-type.application";
-		};
-		046FD1521EF08E39008DFEFD /* Connect-EdTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 046FD16A1EF08E39008DFEFD /* Build configuration list for PBXNativeTarget "Connect-EdTests" */;
-			buildPhases = (
-				046FD14F1EF08E39008DFEFD /* Sources */,
-				046FD1501EF08E39008DFEFD /* Frameworks */,
-				046FD1511EF08E39008DFEFD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				046FD1551EF08E39008DFEFD /* PBXTargetDependency */,
-			);
-			name = "Connect-EdTests";
-			productName = "Connect-EdTests";
-			productReference = 046FD1531EF08E39008DFEFD /* Connect-EdTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		046FD15D1EF08E39008DFEFD /* Connect-EdUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 046FD16D1EF08E39008DFEFD /* Build configuration list for PBXNativeTarget "Connect-EdUITests" */;
-			buildPhases = (
-				046FD15A1EF08E39008DFEFD /* Sources */,
-				046FD15B1EF08E39008DFEFD /* Frameworks */,
-				046FD15C1EF08E39008DFEFD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				046FD1601EF08E39008DFEFD /* PBXTargetDependency */,
-			);
-			name = "Connect-EdUITests";
-			productName = "Connect-EdUITests";
-			productReference = 046FD15E1EF08E39008DFEFD /* Connect-EdUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -215,16 +199,6 @@
 					046FD13C1EF08E38008DFEFD = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
-					};
-					046FD1521EF08E39008DFEFD = {
-						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 046FD13C1EF08E38008DFEFD;
-					};
-					046FD15D1EF08E39008DFEFD = {
-						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 046FD13C1EF08E38008DFEFD;
 					};
 				};
 			};
@@ -242,8 +216,6 @@
 			projectRoot = "";
 			targets = (
 				046FD13C1EF08E38008DFEFD /* Connect-Ed */,
-				046FD1521EF08E39008DFEFD /* Connect-EdTests */,
-				046FD15D1EF08E39008DFEFD /* Connect-EdUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -253,27 +225,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0478675C1F1AF8DB002AD2FA /* AmazonAws in Resources */,
 				046FD14D1EF08E38008DFEFD /* LaunchScreen.storyboard in Resources */,
+				047867531F1AF7CC002AD2FA /* Sdk in Resources */,
 				046FD14A1EF08E38008DFEFD /* Assets.xcassets in Resources */,
 				046FD1481EF08E38008DFEFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		046FD1511EF08E39008DFEFD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		046FD15C1EF08E39008DFEFD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0478675A1F1AF874002AD2FA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		046FD1391EF08E38008DFEFD /* Sources */ = {
@@ -281,47 +257,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				04645E8D1EF1EB18008B7CC4 /* SearchViewController.swift in Sources */,
+				04BAE82F1EF45F5A003B7FCD /* StudentTableViewCell.swift in Sources */,
 				04DCD3611EF3074E001E1408 /* SearchResultsViewController.swift in Sources */,
 				04645E931EF1EBE1008B7CC4 /* ChatsViewController.swift in Sources */,
 				04645E911EF1EBAA008B7CC4 /* FavoritesViewController.swift in Sources */,
+				04FE1D1A1F0058BF009B6082 /* MessageTableViewCell.swift in Sources */,
 				04DCD3631EF32FB7001E1408 /* Student.swift in Sources */,
 				04645E971EF1EC10008B7CC4 /* ProfileViewController.swift in Sources */,
 				04645E991EF1EC1A008B7CC4 /* MoreViewController.swift in Sources */,
+				04FE1D1C1F005C30009B6082 /* Conversation.swift in Sources */,
+				04BAE8331EF4ABB2003B7FCD /* School.swift in Sources */,
 				04645E951EF1EBEB008B7CC4 /* ChatViewController.swift in Sources */,
 				046FD1411EF08E38008DFEFD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		046FD14F1EF08E39008DFEFD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				046FD1581EF08E39008DFEFD /* Connect_EdTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		046FD15A1EF08E39008DFEFD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				046FD1631EF08E39008DFEFD /* Connect_EdUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		046FD1551EF08E39008DFEFD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 046FD13C1EF08E38008DFEFD /* Connect-Ed */;
-			targetProxy = 046FD1541EF08E39008DFEFD /* PBXContainerItemProxy */;
-		};
-		046FD1601EF08E39008DFEFD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 046FD13C1EF08E38008DFEFD /* Connect-Ed */;
-			targetProxy = 046FD15F1EF08E39008DFEFD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		046FD1461EF08E38008DFEFD /* Main.storyboard */ = {
@@ -442,6 +393,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Connect-Ed/AmazonAws",
+					"$(PROJECT_DIR)/Connect-Ed/Sdk/Aws",
+					"$(PROJECT_DIR)/Sdk/Aws",
+					"$(PROJECT_DIR)/AmazonAws",
+				);
 				INFOPLIST_FILE = "Connect-Ed/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -455,66 +414,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Connect-Ed/AmazonAws",
+					"$(PROJECT_DIR)/Connect-Ed/Sdk/Aws",
+					"$(PROJECT_DIR)/Sdk/Aws",
+					"$(PROJECT_DIR)/AmazonAws",
+				);
 				INFOPLIST_FILE = "Connect-Ed/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "connect-ed.online.Connect-Ed";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		046FD16B1EF08E39008DFEFD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Connect-EdTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "connect-ed.online.Connect-EdTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Connect-Ed.app/Connect-Ed";
-			};
-			name = Debug;
-		};
-		046FD16C1EF08E39008DFEFD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Connect-EdTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "connect-ed.online.Connect-EdTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Connect-Ed.app/Connect-Ed";
-			};
-			name = Release;
-		};
-		046FD16E1EF08E39008DFEFD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = "Connect-EdUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "connect-ed.online.Connect-EdUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "Connect-Ed";
-			};
-			name = Debug;
-		};
-		046FD16F1EF08E39008DFEFD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = "Connect-EdUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "connect-ed.online.Connect-EdUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "Connect-Ed";
 			};
 			name = Release;
 		};
@@ -535,24 +448,6 @@
 			buildConfigurations = (
 				046FD1681EF08E39008DFEFD /* Debug */,
 				046FD1691EF08E39008DFEFD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		046FD16A1EF08E39008DFEFD /* Build configuration list for PBXNativeTarget "Connect-EdTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				046FD16B1EF08E39008DFEFD /* Debug */,
-				046FD16C1EF08E39008DFEFD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		046FD16D1EF08E39008DFEFD /* Build configuration list for PBXNativeTarget "Connect-EdUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				046FD16E1EF08E39008DFEFD /* Debug */,
-				046FD16F1EF08E39008DFEFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

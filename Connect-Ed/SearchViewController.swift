@@ -8,8 +8,12 @@
 
 import UIKit
 
+
+
 class SearchViewController: UIViewController, UITextFieldDelegate {
     var entryTextFields: [UITextField] = []
+    
+    var searchResults: [Student] = []
     
     @IBOutlet weak var collegeTextField: UITextField!
     @IBOutlet weak var majorTextField: UITextField!
@@ -40,7 +44,18 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
     @IBAction func search(_ sender: Any) {
         //TODO: search function
         
+        //Test students
+        searchResults = [
+            Student(name: "Annie", school: "University of California Berkely", major: "Computer Science", state: "Illinois", city: "Chicago", profilePic: #imageLiteral(resourceName: "Annie")),
+            Student(name: "Ben", school: "University of California Berkely", major: "Computer Science", state: "California", city: "Los Angeles", profilePic: #imageLiteral(resourceName: "Ben")),
+            Student(name: "Chris", school: "University of California Berkely", major: "Computer Science", state: "Pennsylvania", profilePic: #imageLiteral(resourceName: "Chris"))
+        ]
+        
         performSegue(withIdentifier: "showSearchResults", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        (segue.destination as! SearchResultsViewController).searchResults = searchResults
     }
     
     
