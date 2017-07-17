@@ -18,7 +18,6 @@
 		046FD14A1EF08E38008DFEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046FD1491EF08E38008DFEFD /* Assets.xcassets */; };
 		046FD14D1EF08E38008DFEFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046FD14B1EF08E38008DFEFD /* LaunchScreen.storyboard */; };
 		047867531F1AF7CC002AD2FA /* Sdk in Resources */ = {isa = PBXBuildFile; fileRef = 047867521F1AF7CC002AD2FA /* Sdk */; };
-		0478675C1F1AF8DB002AD2FA /* AmazonAws in Resources */ = {isa = PBXBuildFile; fileRef = 0478675B1F1AF8DB002AD2FA /* AmazonAws */; };
 		0478675F1F1AF920002AD2FA /* AWSMobileHubHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0478675E1F1AF920002AD2FA /* AWSMobileHubHelper.framework */; };
 		047867621F1AF93C002AD2FA /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047867601F1AF93C002AD2FA /* AWSCore.framework */; };
 		047867631F1AF93C002AD2FA /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 047867601F1AF93C002AD2FA /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -26,6 +25,9 @@
 		047867651F1AF93C002AD2FA /* AWSDynamoDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 047867611F1AF93C002AD2FA /* AWSDynamoDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		047867671F1AF9CE002AD2FA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 047867661F1AF9CE002AD2FA /* libsqlite3.tbd */; };
 		047867691F1AF9DE002AD2FA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 047867681F1AF9DE002AD2FA /* libz.tbd */; };
+		047867731F1D1A8D002AD2FA /* AWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478676E1F1D1A8D002AD2FA /* AWSMobileClient.swift */; };
+		047867741F1D1A8D002AD2FA /* AWSMobileHubHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0478676F1F1D1A8D002AD2FA /* AWSMobileHubHelper.framework */; };
+		047867751F1D1A8D002AD2FA /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047867721F1D1A8D002AD2FA /* Messages.swift */; };
 		04BAE82F1EF45F5A003B7FCD /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE82E1EF45F5A003B7FCD /* StudentTableViewCell.swift */; };
 		04BAE8331EF4ABB2003B7FCD /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE8321EF4ABB2003B7FCD /* School.swift */; };
 		04DCD3611EF3074E001E1408 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCD3601EF3074E001E1408 /* SearchResultsViewController.swift */; };
@@ -63,12 +65,14 @@
 		046FD14C1EF08E38008DFEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046FD14E1EF08E38008DFEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		047867521F1AF7CC002AD2FA /* Sdk */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sdk; sourceTree = "<group>"; };
-		0478675B1F1AF8DB002AD2FA /* AmazonAws */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AmazonAws; sourceTree = "<group>"; };
 		0478675E1F1AF920002AD2FA /* AWSMobileHubHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSMobileHubHelper.framework; path = AmazonAws/AWSMobileHubHelper.framework; sourceTree = "<group>"; };
 		047867601F1AF93C002AD2FA /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = Sdk/Aws/AWSCore.framework; sourceTree = "<group>"; };
 		047867611F1AF93C002AD2FA /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSDynamoDB.framework; path = Sdk/Aws/AWSDynamoDB.framework; sourceTree = "<group>"; };
 		047867661F1AF9CE002AD2FA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		047867681F1AF9DE002AD2FA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0478676E1F1D1A8D002AD2FA /* AWSMobileClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSMobileClient.swift; sourceTree = "<group>"; };
+		0478676F1F1D1A8D002AD2FA /* AWSMobileHubHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSMobileHubHelper.framework; sourceTree = "<group>"; };
+		047867721F1D1A8D002AD2FA /* Messages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		04BAE82E1EF45F5A003B7FCD /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		04BAE8321EF4ABB2003B7FCD /* School.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		04DCD3601EF3074E001E1408 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 			files = (
 				047867691F1AF9DE002AD2FA /* libz.tbd in Frameworks */,
 				047867671F1AF9CE002AD2FA /* libsqlite3.tbd in Frameworks */,
+				047867741F1D1A8D002AD2FA /* AWSMobileHubHelper.framework in Frameworks */,
 				0478675F1F1AF920002AD2FA /* AWSMobileHubHelper.framework in Frameworks */,
 				047867641F1AF93C002AD2FA /* AWSDynamoDB.framework in Frameworks */,
 				047867621F1AF93C002AD2FA /* AWSCore.framework in Frameworks */,
@@ -98,7 +103,7 @@
 			children = (
 				047867601F1AF93C002AD2FA /* AWSCore.framework */,
 				047867611F1AF93C002AD2FA /* AWSDynamoDB.framework */,
-				0478675B1F1AF8DB002AD2FA /* AmazonAws */,
+				0478676D1F1D1A8D002AD2FA /* AmazonAws */,
 				046FD13F1EF08E38008DFEFD /* Connect-Ed */,
 				046FD13E1EF08E38008DFEFD /* Products */,
 				047867521F1AF7CC002AD2FA /* Sdk */,
@@ -164,6 +169,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0478676D1F1D1A8D002AD2FA /* AmazonAws */ = {
+			isa = PBXGroup;
+			children = (
+				0478676E1F1D1A8D002AD2FA /* AWSMobileClient.swift */,
+				0478676F1F1D1A8D002AD2FA /* AWSMobileHubHelper.framework */,
+				047867701F1D1A8D002AD2FA /* Models */,
+			);
+			path = AmazonAws;
+			sourceTree = "<group>";
+		};
+		047867701F1D1A8D002AD2FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				047867711F1D1A8D002AD2FA /* NoSQL */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		047867711F1D1A8D002AD2FA /* NoSQL */ = {
+			isa = PBXGroup;
+			children = (
+				047867721F1D1A8D002AD2FA /* Messages.swift */,
+			);
+			path = NoSQL;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,7 +256,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0478675C1F1AF8DB002AD2FA /* AmazonAws in Resources */,
 				046FD14D1EF08E38008DFEFD /* LaunchScreen.storyboard in Resources */,
 				047867531F1AF7CC002AD2FA /* Sdk in Resources */,
 				046FD14A1EF08E38008DFEFD /* Assets.xcassets in Resources */,
@@ -258,10 +288,12 @@
 			files = (
 				04645E8D1EF1EB18008B7CC4 /* SearchViewController.swift in Sources */,
 				04BAE82F1EF45F5A003B7FCD /* StudentTableViewCell.swift in Sources */,
+				047867731F1D1A8D002AD2FA /* AWSMobileClient.swift in Sources */,
 				04DCD3611EF3074E001E1408 /* SearchResultsViewController.swift in Sources */,
 				04645E931EF1EBE1008B7CC4 /* ChatsViewController.swift in Sources */,
 				04645E911EF1EBAA008B7CC4 /* FavoritesViewController.swift in Sources */,
 				04FE1D1A1F0058BF009B6082 /* MessageTableViewCell.swift in Sources */,
+				047867751F1D1A8D002AD2FA /* Messages.swift in Sources */,
 				04DCD3631EF32FB7001E1408 /* Student.swift in Sources */,
 				04645E971EF1EC10008B7CC4 /* ProfileViewController.swift in Sources */,
 				04645E991EF1EC1A008B7CC4 /* MoreViewController.swift in Sources */,
