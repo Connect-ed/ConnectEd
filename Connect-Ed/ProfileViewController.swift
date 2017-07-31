@@ -11,7 +11,6 @@ import UIKit
 
 
 class ProfileViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,5 +25,6 @@ class ProfileViewController: UIViewController {
     
     
     @IBAction func editProfile(_ sender: Any) {
+        
     }
 }

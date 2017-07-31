@@ -16,6 +16,8 @@ import UIKit
 import AWSCore
 import AWSMobileHubHelper
 
+
+
 /**
  * AWSMobileClient is a singleton that bootstraps the app. It creates an identity manager to establish the user identity with Amazon Cognito.
  */
@@ -83,7 +85,7 @@ class AWSMobileClient: NSObject {
 
         if (!isInitialized) {
             AWSSignInManager.sharedInstance().resumeSession(completionHandler: { (result: Any?, authState: AWSIdentityManagerAuthState, error: Error?) in
-                print("Result: \(result) AuthState: \(authState) \n Error:\(error)")
+                print("Result: \(String(describing: result)) AuthState: \(authState) \n Error:\(String(describing: error))")
             }) // If you get an EXC_BAD_ACCESS here in iOS Simulator, then do Simulator -> "Reset Content and Settings..."
                // This will clear bad auth tokens stored by other apps with the same bundle ID.
             isInitialized = true

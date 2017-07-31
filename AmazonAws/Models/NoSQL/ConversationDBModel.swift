@@ -15,7 +15,9 @@ import Foundation
 import UIKit
 import AWSDynamoDB
 
-class Messages: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
+
+
+class ConversationDBModel: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
     var _userId: String?
     var _conversationId: String?
@@ -24,17 +26,14 @@ class Messages: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     var _timestamp: NSNumber?
     
     class func dynamoDBTableName() -> String {
-
         return "connected-mobilehub-2025034993-Messages"
     }
     
     class func hashKeyAttribute() -> String {
-
         return "_userId"
     }
     
     class func rangeKeyAttribute() -> String {
-
         return "_conversationId"
     }
     

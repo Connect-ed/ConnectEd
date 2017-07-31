@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04042D551F269B5700DF721D /* ConnectEdDBDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04042D541F269B5700DF721D /* ConnectEdDBDelegate.swift */; };
+		04042D571F269EB700DF721D /* UserDBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04042D561F269EB700DF721D /* UserDBModel.swift */; };
+		04042D591F27B0F700DF721D /* UserTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04042D581F27B0F700DF721D /* UserTable.swift */; };
 		04645E8D1EF1EB18008B7CC4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04645E8C1EF1EB17008B7CC4 /* SearchViewController.swift */; };
 		04645E911EF1EBAA008B7CC4 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04645E901EF1EBAA008B7CC4 /* FavoritesViewController.swift */; };
 		04645E931EF1EBE1008B7CC4 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04645E921EF1EBE1008B7CC4 /* ChatsViewController.swift */; };
@@ -27,7 +30,11 @@
 		047867691F1AF9DE002AD2FA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 047867681F1AF9DE002AD2FA /* libz.tbd */; };
 		047867731F1D1A8D002AD2FA /* AWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478676E1F1D1A8D002AD2FA /* AWSMobileClient.swift */; };
 		047867741F1D1A8D002AD2FA /* AWSMobileHubHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0478676F1F1D1A8D002AD2FA /* AWSMobileHubHelper.framework */; };
-		047867751F1D1A8D002AD2FA /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047867721F1D1A8D002AD2FA /* Messages.swift */; };
+		047867751F1D1A8D002AD2FA /* ConversationDBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047867721F1D1A8D002AD2FA /* ConversationDBModel.swift */; };
+		0478677A1F1D3CB7002AD2FA /* ConversationTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047867791F1D3CB7002AD2FA /* ConversationTable.swift */; };
+		0478677C1F1D3DEA002AD2FA /* NoSQLModelHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478677B1F1D3DEA002AD2FA /* NoSQLModelHelpers.swift */; };
+		0478677E1F1D3F2A002AD2FA /* NoSQLSampleDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478677D1F1D3F2A002AD2FA /* NoSQLSampleDataGenerator.swift */; };
+		04AF447D1F2044510038D84D /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF447C1F2044510038D84D /* EditProfileViewController.swift */; };
 		04BAE82F1EF45F5A003B7FCD /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE82E1EF45F5A003B7FCD /* StudentTableViewCell.swift */; };
 		04BAE8331EF4ABB2003B7FCD /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE8321EF4ABB2003B7FCD /* School.swift */; };
 		04DCD3611EF3074E001E1408 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCD3601EF3074E001E1408 /* SearchResultsViewController.swift */; };
@@ -52,6 +59,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04042D541F269B5700DF721D /* ConnectEdDBDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectEdDBDelegate.swift; sourceTree = "<group>"; };
+		04042D561F269EB700DF721D /* UserDBModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDBModel.swift; sourceTree = "<group>"; };
+		04042D581F27B0F700DF721D /* UserTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTable.swift; sourceTree = "<group>"; };
 		04645E8C1EF1EB17008B7CC4 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		04645E901EF1EBAA008B7CC4 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		04645E921EF1EBE1008B7CC4 /* ChatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +82,11 @@
 		047867681F1AF9DE002AD2FA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		0478676E1F1D1A8D002AD2FA /* AWSMobileClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSMobileClient.swift; sourceTree = "<group>"; };
 		0478676F1F1D1A8D002AD2FA /* AWSMobileHubHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSMobileHubHelper.framework; sourceTree = "<group>"; };
-		047867721F1D1A8D002AD2FA /* Messages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		047867721F1D1A8D002AD2FA /* ConversationDBModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationDBModel.swift; sourceTree = "<group>"; };
+		047867791F1D3CB7002AD2FA /* ConversationTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversationTable.swift; path = NoSQL/ConversationTable.swift; sourceTree = "<group>"; };
+		0478677B1F1D3DEA002AD2FA /* NoSQLModelHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoSQLModelHelpers.swift; path = NoSQL/NoSQLModelHelpers.swift; sourceTree = "<group>"; };
+		0478677D1F1D3F2A002AD2FA /* NoSQLSampleDataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoSQLSampleDataGenerator.swift; path = NoSQL/NoSQLSampleDataGenerator.swift; sourceTree = "<group>"; };
+		04AF447C1F2044510038D84D /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		04BAE82E1EF45F5A003B7FCD /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		04BAE8321EF4ABB2003B7FCD /* School.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		04DCD3601EF3074E001E1408 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +119,7 @@
 				047867611F1AF93C002AD2FA /* AWSDynamoDB.framework */,
 				0478676D1F1D1A8D002AD2FA /* AmazonAws */,
 				046FD13F1EF08E38008DFEFD /* Connect-Ed */,
+				047867761F1D37F0002AD2FA /* NoSQL */,
 				046FD13E1EF08E38008DFEFD /* Products */,
 				047867521F1AF7CC002AD2FA /* Sdk */,
 				0478675D1F1AF920002AD2FA /* Frameworks */,
@@ -138,6 +153,7 @@
 				04645E921EF1EBE1008B7CC4 /* ChatsViewController.swift */,
 				04645E941EF1EBEB008B7CC4 /* ChatViewController.swift */,
 				04FE1D1B1F005C30009B6082 /* Conversation.swift */,
+				04AF447C1F2044510038D84D /* EditProfileViewController.swift */,
 				04645E901EF1EBAA008B7CC4 /* FavoritesViewController.swift */,
 				04FE1D191F0058BF009B6082 /* MessageTableViewCell.swift */,
 				04645E981EF1EC1A008B7CC4 /* MoreViewController.swift */,
@@ -190,9 +206,22 @@
 		047867711F1D1A8D002AD2FA /* NoSQL */ = {
 			isa = PBXGroup;
 			children = (
-				047867721F1D1A8D002AD2FA /* Messages.swift */,
+				047867721F1D1A8D002AD2FA /* ConversationDBModel.swift */,
+				04042D561F269EB700DF721D /* UserDBModel.swift */,
 			);
 			path = NoSQL;
+			sourceTree = "<group>";
+		};
+		047867761F1D37F0002AD2FA /* NoSQL */ = {
+			isa = PBXGroup;
+			children = (
+				04042D541F269B5700DF721D /* ConnectEdDBDelegate.swift */,
+				047867791F1D3CB7002AD2FA /* ConversationTable.swift */,
+				0478677B1F1D3DEA002AD2FA /* NoSQLModelHelpers.swift */,
+				0478677D1F1D3F2A002AD2FA /* NoSQLSampleDataGenerator.swift */,
+				04042D581F27B0F700DF721D /* UserTable.swift */,
+			);
+			name = NoSQL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,20 +315,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04042D551F269B5700DF721D /* ConnectEdDBDelegate.swift in Sources */,
 				04645E8D1EF1EB18008B7CC4 /* SearchViewController.swift in Sources */,
 				04BAE82F1EF45F5A003B7FCD /* StudentTableViewCell.swift in Sources */,
+				04042D591F27B0F700DF721D /* UserTable.swift in Sources */,
 				047867731F1D1A8D002AD2FA /* AWSMobileClient.swift in Sources */,
 				04DCD3611EF3074E001E1408 /* SearchResultsViewController.swift in Sources */,
 				04645E931EF1EBE1008B7CC4 /* ChatsViewController.swift in Sources */,
+				04042D571F269EB700DF721D /* UserDBModel.swift in Sources */,
+				0478677E1F1D3F2A002AD2FA /* NoSQLSampleDataGenerator.swift in Sources */,
 				04645E911EF1EBAA008B7CC4 /* FavoritesViewController.swift in Sources */,
+				04AF447D1F2044510038D84D /* EditProfileViewController.swift in Sources */,
 				04FE1D1A1F0058BF009B6082 /* MessageTableViewCell.swift in Sources */,
-				047867751F1D1A8D002AD2FA /* Messages.swift in Sources */,
+				047867751F1D1A8D002AD2FA /* ConversationDBModel.swift in Sources */,
 				04DCD3631EF32FB7001E1408 /* Student.swift in Sources */,
 				04645E971EF1EC10008B7CC4 /* ProfileViewController.swift in Sources */,
 				04645E991EF1EC1A008B7CC4 /* MoreViewController.swift in Sources */,
+				0478677C1F1D3DEA002AD2FA /* NoSQLModelHelpers.swift in Sources */,
 				04FE1D1C1F005C30009B6082 /* Conversation.swift in Sources */,
 				04BAE8331EF4ABB2003B7FCD /* School.swift in Sources */,
 				04645E951EF1EBEB008B7CC4 /* ChatViewController.swift in Sources */,
+				0478677A1F1D3CB7002AD2FA /* ConversationTable.swift in Sources */,
 				046FD1411EF08E38008DFEFD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,10 +464,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Connect-Ed/AmazonAws",
-					"$(PROJECT_DIR)/Connect-Ed/Sdk/Aws",
-					"$(PROJECT_DIR)/Sdk/Aws",
 					"$(PROJECT_DIR)/AmazonAws",
+					"$(PROJECT_DIR)/Sdk/Aws",
 				);
 				INFOPLIST_FILE = "Connect-Ed/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

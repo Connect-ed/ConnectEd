@@ -12,7 +12,7 @@ import UIKit
 
 
 class Student {
-    var UUID: u_long
+    var userID: String
     
     var name: String
     var school: String
@@ -23,8 +23,8 @@ class Student {
     var profilePic: UIImage?
     
     
-    init(UUID: u_long = 0, name: String = "", school: String = "", major: String = "", state: String = "", city: String = "", profilePic: UIImage? = #imageLiteral(resourceName: "photo")) {
-        self.UUID = UUID
+    init(userID: String = "", name: String = "", school: String = "", major: String = "", state: String = "", city: String = "", profilePic: UIImage? = #imageLiteral(resourceName: "photo")) {
+        self.userID = userID
         
         self.name = name
         self.school = school
