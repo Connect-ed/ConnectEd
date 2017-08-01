@@ -12,27 +12,54 @@ import UIKit
 
 
 class Student {
-    var userID: String
+    var userID: String = ""
     
-    var name: String
-    var school: String
-    var major: String
-    var state: String
-    var city: String
+    var name: String = ""
+    var school: String = ""
+    var major: String = ""
+    var state: String = ""
+    var city: String = ""
     
-    var profilePic: UIImage?
+    var profilePic: UIImage = #imageLiteral(resourceName: "photo")
     
     
-    init(userID: String = "", name: String = "", school: String = "", major: String = "", state: String = "", city: String = "", profilePic: UIImage? = #imageLiteral(resourceName: "photo")) {
-        self.userID = userID
+    init(userID: String? = nil, name: String? = nil, school: String? = nil, major: String? = nil, state: String? = nil, city: String? = nil, profilePic: UIImage? = nil) {
+        if userID != nil {
+            self.userID = userID!
+        }
         
-        self.name = name
-        self.school = school
-        self.major = major
-        self.state = state
-        self.city = city
+        if name != nil {
+            self.name = name!
+        }
         
-        self.profilePic = profilePic
+        if school != nil {
+            self.school = school!
+        }
+        
+        if major != nil {
+            self.major = major!
+        }
+        
+        if state != nil {
+            self.state = state!
+        }
+        
+        if city != nil {
+            self.city = city!
+        }
+        
+        if profilePic != nil {
+            self.profilePic = profilePic!
+        }
+    }
+    
+    convenience init(_ userDBModel: UserDBModel?) {
+        if userDBModel != nil {
+            self.init(userID: userDBModel?._userId, name: userDBModel?._name, school: userDBModel?._school, major: userDBModel?._major, state: userDBModel?._state, city: userDBModel?._city, profilePic: nil)
+        }
+        else {
+            self.init()
+        }
     }
     
     

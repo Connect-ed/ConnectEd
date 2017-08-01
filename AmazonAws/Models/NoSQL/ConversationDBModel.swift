@@ -18,12 +18,13 @@ import AWSDynamoDB
 
 
 class ConversationDBModel: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
-    
     var _userId: String?
+    
     var _conversationId: String?
     var _content: String?
     var _messageId: String?
     var _timestamp: NSNumber?
+    
     
     class func dynamoDBTableName() -> String {
         return "connected-mobilehub-2025034993-Messages"

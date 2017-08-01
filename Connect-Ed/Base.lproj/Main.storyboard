@@ -355,7 +355,6 @@
                                     <navigationItem title="Profile" id="h5k-Xa-o0F">
                                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="oZF-m2-GsR">
                                             <connections>
-                                                <action selector="editProfile:" destination="zSe-3h-3N3" id="nJr-Eb-ItV"/>
                                                 <segue destination="EzS-WB-C3P" kind="popoverPresentation" popoverAnchorBarButtonItem="oZF-m2-GsR" id="1Lo-0r-j3t">
                                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                                 </segue>
@@ -460,6 +459,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="profile" id="mGK-fp-bV2"/>
+                    <connections>
+                        <outlet property="locationLabel" destination="m8O-sa-4Tg" id="XnO-hT-IDO"/>
+                        <outlet property="majorLabel" destination="8ih-uC-soJ" id="z2k-89-ap1"/>
+                        <outlet property="nameLabel" destination="abC-lu-vuz" id="vWj-4t-V2z"/>
+                        <outlet property="profileImageView" destination="gBb-qD-y5O" id="Iww-oZ-IG6"/>
+                        <outlet property="schoolLabel" destination="Bqk-5U-wr3" id="5zw-Zk-OSo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U0f-UL-Jjh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -514,14 +520,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Major:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IyO-ao-bhu">
-                                <rect key="frame" x="16" y="303" width="90" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pC-6e-P8g">
-                                <rect key="frame" x="16" y="347" width="90" height="36"/>
+                                <rect key="frame" x="16" y="300" width="90" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -534,8 +533,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s96-vU-G3m">
-                                <rect key="frame" x="114" y="350" width="245" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s96-vU-G3m">
+                                <rect key="frame" x="114" y="343" width="245" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -548,14 +547,36 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AbD-R3-2GL">
+                                <rect key="frame" x="114" y="381" width="245" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5S0-co-uLh">
+                                <rect key="frame" x="16" y="386" width="90" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="City:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pC-6e-P8g">
+                                <rect key="frame" x="16" y="340" width="90" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="locationTextField" destination="s96-vU-G3m" id="PVN-E7-Zne"/>
+                        <outlet property="cityTextField" destination="s96-vU-G3m" id="N47-kL-qkH"/>
                         <outlet property="majorTextField" destination="eTb-Js-Gl5" id="hhu-C3-RtW"/>
                         <outlet property="nameTextField" destination="9EA-gr-Su0" id="b1b-JI-CNz"/>
                         <outlet property="schoolTextField" destination="Pxv-o9-LOw" id="t30-hN-Q6V"/>
+                        <outlet property="stateTextField" destination="AbD-R3-2GL" id="udb-F8-zIJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PjN-tO-L9U" userLabel="First Responder" sceneMemberID="firstResponder"/>

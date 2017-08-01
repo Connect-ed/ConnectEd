@@ -49,7 +49,7 @@ class AWSMobileClient: NSObject {
      * - returns: true if call was handled by this component
      */
     func withApplication(_ application: UIApplication, withURL url: URL, withSourceApplication sourceApplication: String?, withAnnotation annotation: Any) -> Bool {
-        print("withApplication:withURL")
+        //print("withApplication:withURL")
         AWSSignInManager.sharedInstance().interceptApplication(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
         
         if (!isInitialized) {
@@ -66,7 +66,7 @@ class AWSMobileClient: NSObject {
      * - parameter application: from application delegate.
      */
     func applicationDidBecomeActive(_ application: UIApplication) {
-        print("applicationDidBecomeActive:")
+        //print("applicationDidBecomeActive:")
     }
     
     
@@ -77,7 +77,7 @@ class AWSMobileClient: NSObject {
     * - parameter launchOptions: from application delegate.
     */
     func didFinishLaunching(_ application: UIApplication, withOptions launchOptions: [AnyHashable: Any]?) -> Bool {
-        print("didFinishLaunching:")
+        //print("didFinishLaunching:")
 
 
             
@@ -85,7 +85,7 @@ class AWSMobileClient: NSObject {
 
         if (!isInitialized) {
             AWSSignInManager.sharedInstance().resumeSession(completionHandler: { (result: Any?, authState: AWSIdentityManagerAuthState, error: Error?) in
-                print("Result: \(String(describing: result)) AuthState: \(authState) \n Error:\(String(describing: error))")
+                //print("Result: \(String(describing: result)) AuthState: \(authState) \n Error:\(String(describing: error))")
             }) // If you get an EXC_BAD_ACCESS here in iOS Simulator, then do Simulator -> "Reset Content and Settings..."
                // This will clear bad auth tokens stored by other apps with the same bundle ID.
             isInitialized = true

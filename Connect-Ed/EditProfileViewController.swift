@@ -14,7 +14,8 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var schoolTextField: UITextField!
     @IBOutlet weak var majorTextField: UITextField!
-    @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var cityTextField: UITextField!
+    @IBOutlet weak var stateTextField: UITextField!
     
     
     override func viewDidLoad() {
@@ -34,9 +35,7 @@ class EditProfileViewController: UIViewController {
     }
     
     @IBAction func save(_ sender: Any) {
-        let dbDelegate = ConnectedEdDBDelegate()
-        
-        dbDelegate.updateProfile(name: nameTextField.text, school: schoolTextField.text, major: majorTextField.text, location: locationTextField.text)
+        ConnectEdDBDelegate.updateProfile(name: nameTextField.text, school: schoolTextField.text, major: majorTextField.text, state: stateTextField.text, city: cityTextField.text)
         
         dismiss(animated: true, completion: nil)
     }

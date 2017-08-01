@@ -51,27 +51,24 @@ class UsersTable: NSObject, Table {
     }
     
     
-    func addItem(name: String? = nil, school: String? = nil, major: String? = nil, location: String? = nil) {
+    class func getItem(hashKey: String, completionHandler: @escaping (_ response: AWSDynamoDBObjectModel?, _ error: Error?) -> Void) {
+        AWSDynamoDBObjectMapper.default().load(UserDBModel.self, hashKey: hashKey, rangeKey: nil, completionHandler: completionHandler)
+    }
+    
+    class func addItem(_ item: UserDBModel) {
         let objectMapper = AWSDynamoDBObjectMapper.default()
         var errors: [NSError] = []
         let group: DispatchGroup = DispatchGroup()
         
-        let itemForGet: UserDBModel! = UserDBModel()
-        
-        itemForGet._userId = AWSIdentityManager.default().identityId!
-        itemForGet._location = location
-        itemForGet._major = major
-        itemForGet._name = name
-        itemForGet._school = school
-        
         group.enter()
         
-        objectMapper.save(itemForGet, completionHandler: {(error: Error?) -> Void in
+        objectMapper.save(item, completionHandler: {(error: Error?) -> Void in
             if let error = error as NSError? {
                 DispatchQueue.main.async(execute: {
                     errors.append(error)
                 })
             }
+            
             group.leave()
         })
     }
