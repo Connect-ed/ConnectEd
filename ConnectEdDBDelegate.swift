@@ -56,7 +56,23 @@ class ConnectEdDBDelegate {
         userDBModel?._major = major
         userDBModel?._state = state
         userDBModel?._city = city
-        //userDBModel?._location = "None"
+        
+        //Empty text "" will not update the field, so replace with a single space
+        if userDBModel?._name != nil && userDBModel?._name == "" {
+            userDBModel?._name = " "
+        }
+        if userDBModel?._school != nil && userDBModel?._school == "" {
+            userDBModel?._school = " "
+        }
+        if userDBModel?._major != nil && userDBModel?._major == "" {
+            userDBModel?._major = " "
+        }
+        if userDBModel?._state != nil && userDBModel?._state == "" {
+            userDBModel?._state = " "
+        }
+        if userDBModel?._city != nil && userDBModel?._city == "" {
+            userDBModel?._city = " "
+        }
         
         UsersTable.addItem(userDBModel!)
     }

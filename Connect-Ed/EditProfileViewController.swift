@@ -35,7 +35,7 @@ class EditProfileViewController: UIViewController {
     }
     
     @IBAction func save(_ sender: Any) {
-        ConnectEdDBDelegate.updateProfile(name: nameTextField.text, school: schoolTextField.text, major: majorTextField.text, state: stateTextField.text, city: cityTextField.text)
+        ConnectEdDBDelegate.updateProfile(name: nameTextField.text ?? "", school: schoolTextField.text ?? "", major: majorTextField.text ?? "", state: stateTextField.text ?? "", city: cityTextField.text ?? "")
         
         dismiss(animated: true, completion: nil)
     }
