@@ -41,6 +41,7 @@
 		04DCD3631EF32FB7001E1408 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCD3621EF32FB7001E1408 /* Student.swift */; };
 		04FE1D1A1F0058BF009B6082 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE1D191F0058BF009B6082 /* MessageTableViewCell.swift */; };
 		04FE1D1C1F005C30009B6082 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE1D1B1F005C30009B6082 /* Conversation.swift */; };
+		51158F6A00E3D12E0E654C08 /* Pods_Connect_Ed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E165105B5242669A3100EDDC /* Pods_Connect_Ed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -86,6 +87,7 @@
 		047867791F1D3CB7002AD2FA /* ConversationTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversationTable.swift; path = NoSQL/ConversationTable.swift; sourceTree = "<group>"; };
 		0478677B1F1D3DEA002AD2FA /* NoSQLModelHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoSQLModelHelpers.swift; path = NoSQL/NoSQLModelHelpers.swift; sourceTree = "<group>"; };
 		0478677D1F1D3F2A002AD2FA /* NoSQLSampleDataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoSQLSampleDataGenerator.swift; path = NoSQL/NoSQLSampleDataGenerator.swift; sourceTree = "<group>"; };
+		0483B99F7B413845C1A410F6 /* Pods-Connect-Ed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect-Ed.release.xcconfig"; path = "Pods/Target Support Files/Pods-Connect-Ed/Pods-Connect-Ed.release.xcconfig"; sourceTree = "<group>"; };
 		04AF447C1F2044510038D84D /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		04BAE82E1EF45F5A003B7FCD /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		04BAE8321EF4ABB2003B7FCD /* School.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
@@ -93,6 +95,8 @@
 		04DCD3621EF32FB7001E1408 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		04FE1D191F0058BF009B6082 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		04FE1D1B1F005C30009B6082 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		5362BD8AC0486CF1D57B6C02 /* Pods-Connect-Ed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect-Ed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Connect-Ed/Pods-Connect-Ed.debug.xcconfig"; sourceTree = "<group>"; };
+		E165105B5242669A3100EDDC /* Pods_Connect_Ed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Connect_Ed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 				0478675F1F1AF920002AD2FA /* AWSMobileHubHelper.framework in Frameworks */,
 				047867641F1AF93C002AD2FA /* AWSDynamoDB.framework in Frameworks */,
 				047867621F1AF93C002AD2FA /* AWSCore.framework in Frameworks */,
+				51158F6A00E3D12E0E654C08 /* Pods_Connect_Ed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +128,7 @@
 				046FD13E1EF08E38008DFEFD /* Products */,
 				047867521F1AF7CC002AD2FA /* Sdk */,
 				0478675D1F1AF920002AD2FA /* Frameworks */,
+				BA860A78F737A4FF363785F7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,6 +187,7 @@
 				047867681F1AF9DE002AD2FA /* libz.tbd */,
 				047867661F1AF9CE002AD2FA /* libsqlite3.tbd */,
 				0478675E1F1AF920002AD2FA /* AWSMobileHubHelper.framework */,
+				E165105B5242669A3100EDDC /* Pods_Connect_Ed.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -224,6 +231,15 @@
 			name = NoSQL;
 			sourceTree = "<group>";
 		};
+		BA860A78F737A4FF363785F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5362BD8AC0486CF1D57B6C02 /* Pods-Connect-Ed.debug.xcconfig */,
+				0483B99F7B413845C1A410F6 /* Pods-Connect-Ed.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -231,11 +247,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046FD1671EF08E39008DFEFD /* Build configuration list for PBXNativeTarget "Connect-Ed" */;
 			buildPhases = (
+				A10C4C02C83B92AB1D553B35 /* [CP] Check Pods Manifest.lock */,
 				046FD1391EF08E38008DFEFD /* Sources */,
 				046FD13A1EF08E38008DFEFD /* Frameworks */,
 				046FD13B1EF08E38008DFEFD /* Resources */,
 				0478672B1F1AEF48002AD2FA /* Embed Frameworks */,
 				0478675A1F1AF874002AD2FA /* ShellScript */,
+				3A8863D5EF5A750D2B26CD4B /* [CP] Embed Pods Frameworks */,
+				58D695DCA83828F34827BB5A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -307,6 +326,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh\"";
+		};
+		3A8863D5EF5A750D2B26CD4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Connect-Ed/Pods-Connect-Ed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58D695DCA83828F34827BB5A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Connect-Ed/Pods-Connect-Ed-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A10C4C02C83B92AB1D553B35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -459,6 +523,7 @@
 		};
 		046FD1681EF08E39008DFEFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5362BD8AC0486CF1D57B6C02 /* Pods-Connect-Ed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -478,6 +543,7 @@
 		};
 		046FD1691EF08E39008DFEFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0483B99F7B413845C1A410F6 /* Pods-Connect-Ed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
